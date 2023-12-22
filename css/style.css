@@ -1,0 +1,118 @@
+/* スタイル */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* ログインページのスタイル */
+#loginPage, #attendancePage {
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+input[type="text"], input[type="password"] {
+  margin-bottom: 10px;
+  width: 90%;
+  padding: 5px;
+}
+
+button {
+  padding: 5px 15px;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.login-form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 300px;
+}
+
+.login-input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.login-button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background-color: #45a049;
+}
+
+/* その他のページのスタイル */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+h2, h3 {
+  color: #333;
+}
+
+
+/* カレンダー全体のスタイル */
+.calendar {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto; /* 中央揃え */
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* カレンダーテーブルのスタイル */
+.calendar-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed; /* テーブルの幅を固定 */
+}
+
+/* カレンダーヘッダーのスタイル */
+.calendar-header th {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+/* カレンダーボディのスタイル */
+.calendar-body td {
+  height: 80px; /* 高さを固定 */
+  vertical-align: top; /* コンテンツを上部に揃える */
+  overflow: hidden; /* はみ出たコンテンツを隠す */
+  padding: 5px;
+  text-align: center;
+}
+
+/* 日付セルのスタイル */
+.calendar-body td small {
+  display: block; /* ブロック要素として表示 */
+  max-width: 100%; /* 幅の最大値を設定 */
+  overflow: hidden; /* はみ出たコンテンツを隠す */
+  white-space: nowrap; /* 折り返しを防止 */
+}

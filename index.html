@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Attendance App</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="app">
+        <div id="loginPage" class="login-container">
+            <div class="login-form">
+                <h2>Login</h2>
+                <input type="text" id="username" placeholder="Username" class="login-input">
+                <input type="password" id="password" placeholder="Password" class="login-input">
+                <button id="loginButton" class="login-button">Login</button>
+            </div>
+        </div>
+
+        <div id="attendancePage" style="display:none;">
+            <h2>出勤管理システム</h2>
+            <button id="clockInButton">出勤</button>
+            <button id="clockOutButton">退勤</button>
+            <div id="attendanceRecords">
+                <!-- ここに出退勤記録を表示 -->
+            </div>
+            <div id="attendanceHistory">
+                <h3>出勤・退勤履歴</h3>
+                <ul id="historyList">
+                    <p id="currentDate"></p>
+                    <!-- 履歴がここに追加されます -->
+                </ul>
+            </div>
+            <div id="calendarSchedule" class="calendar">
+                <h3>スケジュール</h3>
+                <table id="calendarTable" class="calendar-table">
+                    <thead class="calendar-header">
+                        <tr>
+                            <th>日</th>
+                            <th>月</th>
+                            <th>火</th>
+                            <th>水</th>
+                            <th>木</th>
+                            <th>金</th>
+                            <th>土</th>
+                        </tr>
+                    </thead>
+                    <tbody class="calendar-body">
+                        <!-- JavaScriptでカレンダーを生成 -->
+                    </tbody>
+                </table>
+            </div>                            
+        </div>                
+    </div>
+
+    <script src="javascript/script.js"></script>
+</body>
+</html>
